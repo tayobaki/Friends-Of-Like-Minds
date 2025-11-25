@@ -1,103 +1,132 @@
+import Hero from "@/components/Hero";
+import Programmes from "@/components/programmes";
+import Resources from "@/components/resources";
+import Slideshow from "@/components/slideshow";
+import Updated from "@/components/updated";
+import { Icon } from "@iconify/react";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+    <div>
+      <Hero />
+      <div className="py-[8%] bg-[#FBF9ED] px-3">
+        <div className="max-w-[1100px] mx-auto flex flex-wrap items-stretch justify-evenly gap-12">
+          <div className="w-[25%] flex flex-col flex-wrap text-center">
+            <Icon
+              icon={"ion:people-sharp"}
+              fontSize={60}
+              color="#540F0A"
+              className="text-center mx-auto"
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+            <div className="text-[16px]">
+              <h1 className="mb-3.5">Who we are</h1>
+              <p className="font-light">
+                We are a youth-focused leadership development organization
+                committed to raising leaders that will transform Africa.
+              </p>
+              <button className="mt-4 underline text-lg font-medium">
+                Read More
+              </button>
+            </div>
+          </div>
+          <div className="w-[25%] flex flex-col flex-wrap text-center">
+            <Icon
+              icon={"ion:people-sharp"}
+              fontSize={60}
+              color="#540F0A"
+              className="text-center mx-auto"
+            />
+            <div className="text-[16px]">
+              <h1 className="mb-3.5">Who we are</h1>
+              <p className="font-light">
+                We are a youth-focused leadership development organization
+                committed to raising leaders that will transform Africa.
+              </p>
+              <button className="mt-4 underline text-lg font-medium">
+                Read More
+              </button>
+            </div>
+          </div>
+          <div className="w-[25%] flex flex-col flex-wrap text-center">
+            <Icon
+              icon={"ion:people-sharp"}
+              fontSize={60}
+              color="#540F0A"
+              className="text-center mx-auto"
+            />
+            <div className="text-[16px]">
+              <h1 className="mb-3.5">Who we are</h1>
+              <p className="font-light">
+                We are a youth-focused leadership development organization
+                committed to raising leaders that will transform Africa.
+              </p>
+              <button className="mt-4 underline text-lg font-medium">
+                Read More
+              </button>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+      {/* Friends Of Like Minds, Akabor Development Initiative */}
+      <div className=" bg-[#FBF9ED] px-3 pb-[6%]">
+        <div className="max-w-[950px] mx-auto flex items-center gap-x-12 justify-between w-full">
+          <div className="w-[60%] pr-8">
+            <h1 className="text-4xl font-bold">Making a difference together</h1>
+            <p className="text-[16px] font-light my-4">
+              We are a youth-focused leadership development organization
+              committed to raising leaders that will transform Africa; through
+              interventions for young people, that bridges the gap in
+              leadership, education, employability and entrepreneurship. As a
+              mission driven organization, we recognize that youth leadership
+              and inclusion is critical to nation building and wealth creation.
+            </p>
+            <p className="text-[16px] font-light">
+              Our cutting-edge programmatic thrusts inspire and equip young
+              people, changing their mindset, to lead ethically and motivating
+              them to deliver positive change in their communities; while also
+              supporting social entrepreneurs to build systems and structures
+              that are crucial for business sustainability, thereby contributing
+              to livelihoods, social and national development.
+            </p>
+          </div>
+          <div className="w-[40%]">
+            <Image
+              src={
+                "https://leapafrica.org/wp-content/uploads/2024/01/IMG_9784-2048x1922-min.jpeg"
+              }
+              alt="heroImg"
+              priority
+              width={800}
+              height={751}
+              className="rounded-sm"
+            />
+          </div>
+        </div>
+      </div>
+      <Slideshow />
+      <Programmes />
+      <Resources />
+      <div className="bg-[#FBF9ED] px-3 mx-auto flex justify-center">
+        <div className="max-w-[1300px] mx-auto w-full rounded flex items-center justify-evenly h-36 bg-orange-300 font-semibold -translate-y-1/2 border text-lg">
+          <div className="flex items-center gap-2 underline underline-offset-4">
+            <p>Read our articles</p>
+          </div>
+          <div className="flex items-center gap-2 underline underline-offset-4">
+            <p>View research papers</p>
+          </div>
+          <div className="flex items-center gap-2 underline underline-offset-4">
+            <p>Explore reports</p>
+          </div>
+          <div className="flex items-center gap-2 underline underline-offset-4">
+            <p>Listen to podcasts</p>
+          </div>
+          <div className="flex items-center gap-2 underline underline-offset-4">
+            <p>Newsletter</p>
+          </div>
+        </div>
+      </div>
+      <Updated />
     </div>
   );
 }
