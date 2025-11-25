@@ -7,10 +7,13 @@ const Navbar = () => {
         boxShadow:
           "0px 0px 4px 0px rgba(170.99999999999997, 170.99999999999997, 170.99999999999997, 0.25098039215686274)",
       }}
-      className="h-[100px] bg-[#FBF9ED] border-b border-black w-full px-8 py-4 flex items-center"
+      className="h-[100px] bg-[#FBF9ED] shadow-xl border-b border-black/10 w-full px-8 py-4 flex items-center"
     >
       <div className="max-w-[1500px] w-full mx-auto flex items-center justify-between">
         {/* <Image src={""} alt="Logo" width={60} height={60} /> */}
+        <h1 className="text-xl font-black">
+          Friends Of Like Minds, <br /> Akabor Development Initiative
+        </h1>
         <ul className="uppercase flex items-center gap-5">
           {navLinks.map((link) => (
             <li
@@ -31,7 +34,7 @@ const Navbar = () => {
         </ul>
         <div className="flex items-center gap-4 text-sm text-white">
           <button className="bg-[#540f0a] h-14 py-1.5 flex items-center justify-center px-4 text-nowrap text-center rounded uppercase font-semibold">
-            <Icon icon={'stash:search-duotone'} fontSize={20} className=""/>
+            <Icon icon={"stash:search-duotone"} fontSize={20} className="" />
           </button>
           <button className="bg-[#540f0a] h-14 py-1.5 flex items-center justify-center px-4 text-nowrap text-center rounded uppercase font-semibold">
             Donate Now
