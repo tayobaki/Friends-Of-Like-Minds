@@ -7,10 +7,10 @@ export default function AboutUsPage() {
     <div className="">
       <div className="max-w-[1100px] mx-auto pt-[6%] pb-[6%]">
         <div className="flex items-center justify-between">
-          <div className="w-[55%]">
-            <h1 className="text-4xl font-bold mb-8">About LEAP Africa</h1>
-            <p className="text-[16px] font-light">
-              LEAP Africa is a youth-focused leadership development organization
+          <div className="w-[49%]">
+            <h1 className="text-4xl font-bold mb-8">About Friends Of Like Minds</h1>
+            <p className="text-sm font-light">
+              Friends Of Like Minds, Akabor Development Initiative is a youth-focused leadership development organization
               committed to raising leaders who will transform Africa; through
               interventions for young people, that bridges the gap in five
               areas: Education, Entrepreneurship, Employability, Active
@@ -26,7 +26,7 @@ export default function AboutUsPage() {
               upward social mobility. Our core and special programmes aim to
               tackle problems across these five programmatic focus areas; each
               programme aims to solve one or more of these challenges at a time.
-              LEAP Africa actively contributes to the body of knowledge
+              Friends Of Like Minds, Akabor Development Initiative actively contributes to the body of knowledge
               leveraging our strategic direction of ecosystem building, thought
               leadership and advocacy.
             </p>
@@ -36,10 +36,10 @@ export default function AboutUsPage() {
               src={
                 "https://leapafrica.org/wp-content/uploads/2024/01/IMG_9784-2048x1922-min.jpeg"
               }
-              alt="hands"
-              width={400}
-              height={400}
-              className="rounded-xl size-[400px]"
+              alt="aboutImag"
+              width={500}
+              height={600}
+              className="rounded-xl"
             />
           </div>
         </div>

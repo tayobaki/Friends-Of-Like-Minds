@@ -26,7 +26,7 @@ const Programmes = () => {
             <div className="relative z-10 space-y-4 flex flex-col items-center justify-center text-center text-white">
               <h1 className="font-bold text-2xl">ILEAD Programme</h1>
               <p>
-                A multi-dimensional programme through which LEAP Africa engages
+                A multi-dimensional programme through which Friends Of Like Minds, Akabor Development Initiative engages
                 teachers, school administrators and graduates.
               </p>
               <button className="bg-white text-black h-14 py-1.5 flex items-center justify-center px-4 text-nowrap text-center uppercase font-semibold">
@@ -50,7 +50,7 @@ const Programmes = () => {
             <div className="relative z-10 space-y-4 flex flex-col items-center justify-center text-center text-white">
               <h1 className="font-bold text-2xl">ILEAD Programme</h1>
               <p>
-                A multi-dimensional programme through which LEAP Africa engages
+                A multi-dimensional programme through which Friends Of Like Minds, Akabor Development Initiative engages
                 teachers, school administrators and graduates.
               </p>
               <button className="bg-white text-black h-14 py-1.5 flex items-center justify-center px-4 text-nowrap text-center uppercase font-semibold">
@@ -73,7 +73,7 @@ const Programmes = () => {
             <div className="relative z-10 space-y-4 flex flex-col items-center justify-center text-center text-white">
               <h1 className="font-bold text-2xl">ILEAD Programme</h1>
               <p>
-                A multi-dimensional programme through which LEAP Africa engages
+                A multi-dimensional programme through which Friends Of Like Minds, Akabor Development Initiative engages
                 teachers, school administrators and graduates.
               </p>
               <button className="bg-white text-black h-14 py-1.5 flex items-center justify-center px-4 text-nowrap text-center uppercase font-semibold">
@@ -96,7 +96,7 @@ const Programmes = () => {
             <div className="relative z-10 space-y-4 flex flex-col items-center justify-center text-center text-white">
               <h1 className="font-bold text-2xl">ILEAD Programme</h1>
               <p>
-                A multi-dimensional programme through which LEAP Africa engages
+                A multi-dimensional programme through which Friends Of Like Minds, Akabor Development Initiative engages
                 teachers, school administrators and graduates.
               </p>
               <button className="bg-white text-black h-14 py-1.5 flex items-center justify-center px-4 text-nowrap text-center uppercase font-semibold">

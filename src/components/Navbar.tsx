@@ -10,8 +10,7 @@ const Navbar = () => {
       className="h-[100px] bg-[#FBF9ED] shadow-xl border-b border-black/10 w-full px-8 py-4 flex items-center"
     >
       <div className="max-w-[1500px] w-full mx-auto flex items-center justify-between">
-        {/* <Image src={""} alt="Logo" width={60} height={60} /> */}
-        <h1 className="text-xl font-black">
+        <h1 className="text-xl font-black cursor-pointer">
           Friends Of Like Minds, <br /> Akabor Development Initiative
         </h1>
         <ul className="uppercase flex items-center gap-5">
@@ -48,9 +47,6 @@ const Navbar = () => {
 export default Navbar;
 
 const navLinks = [
-  {
-    link: "home",
-  },
   {
     link: "who  we are",
     dropdownIcon: true,

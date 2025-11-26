@@ -52,15 +52,15 @@ export default OurApproach;
 const ourApproach = [
   {
     title: "Ecosystem Building",
-    desc: "Through its programmes and interventions, LEAP Africa enlists, equips and empowers other youth-led and youth focused organisations across Africa. Through its programmes and interventions, LEAP Africa enlists, equips and empowers other youth-led and youth focused organisations across Africa.",
+    desc: "Through its programmes and interventions, Friends Of Like Minds, Akabor Development Initiative enlists, equips and empowers other youth-led and youth focused organisations across Africa. Through its programmes and interventions, Friends Of Like Minds, Akabor Development Initiative enlists, equips and empowers other youth-led and youth focused organisations across Africa.",
   },
   {
     title: "Thought Leadership",
-    desc: "LEAP Africa continues to serve as a thought leader that generates knowledge products and evidence-based models that have lasting impact on policies and development programmes.",
+    desc: "Friends Of Like Minds, Akabor Development Initiative continues to serve as a thought leader that generates knowledge products and evidence-based models that have lasting impact on policies and development programmes.",
   },
   {
     title: "Thought Leadership",
-    desc: "LEAP Africa continues to serve as a thought leader that generates knowledge products and evidence-based models that have lasting impact on policies and development programmes.",
+    desc: "Friends Of Like Minds, Akabor Development Initiative continues to serve as a thought leader that generates knowledge products and evidence-based models that have lasting impact on policies and development programmes.",
   },
 ];
 
