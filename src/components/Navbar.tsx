@@ -1,6 +1,11 @@
+"use client";
 import { Icon } from "@iconify/react";
+import Link from "next/link";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
   return (
     <header
       style={{
@@ -13,13 +18,15 @@ const Navbar = () => {
         <h1 className="text-xl font-black cursor-pointer">
           Friends Of Like Minds, <br /> Akabor Development Initiative
         </h1>
-        <ul className="uppercase flex items-center gap-5">
-          {navLinks.map((link) => (
+        <ul className="uppercase h-full lg:flex items-center gap-5 hidden">
+          {navLinks.map((link, index) => (
             <li
+              onMouseEnter={() => setOpenIndex(index)}
+              onMouseLeave={() => setOpenIndex(null)}
               key={link.link}
-              className="font-semibold relative flex items-center cursor-pointer group hover:text-black/60 duration-500 transition gap-1"
+              className="font-semibold relative h-9 flex items-center justify-center cursor-pointer group hover:text-black/60 duration-500 transition gap-1"
             >
-              <>{link.link}</>
+              {link.link}
               {link.dropdownIcon && (
                 <Icon
                   icon={"line-md:chevron-down"}
@@ -27,6 +34,21 @@ const Navbar = () => {
                   fontSize={20}
                   className="group-hover:-rotate-180 transition duration-500"
                 />
+              )}
+              {openIndex === index && link.dropdownIcon && (
+                <div className="">
+                  <ul className="absolute left-0 top-9 bg-[#540F0A] w-40 rounded overflow-hidden shadow-lg">
+                    {link.dropdownItems?.map((item, idx) => (
+                      <Link
+                        href={item.link}
+                        key={idx}
+                        className="py-2 hover:bg-orange-300 cursor-pointer block text-white hover:text-black transition duration-500 overflow-hidden px-2"
+                      >
+                        {item.title}
+                      </Link>
+                    ))}
+                  </ul>
+                </div>
               )}
             </li>
           ))}
@@ -50,6 +72,16 @@ const navLinks = [
   {
     link: "who  we are",
     dropdownIcon: true,
+    dropdownItems: [
+      {
+        title: "About",
+        link: "/about-us",
+      },
+      {
+        title: "History",
+        link: "/history",
+      },
+    ],
   },
   {
     link: "our work",
